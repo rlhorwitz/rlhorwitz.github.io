@@ -6,10 +6,7 @@ import {
 } from "react-router-dom";
 import {
   Nav,
-  Navbar,
-  Form,
-  FormControl,
-  Button
+  Navbar
 } from "react-bootstrap";
 import {
   StyledNavBar
@@ -25,26 +22,19 @@ export default function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link className="ml-2 mr-2 text-nowrap" href="/about">About</Nav.Link>
-              <Nav.Link className="ml-2 mr-2 text-nowrap" href="/blog">Blog</Nav.Link>
+              <Nav.Link className="ml-2 mr-2 text-nowrap" href="/">Home</Nav.Link>
+              {/* <Nav.Link className="ml-2 mr-2 text-nowrap" href="/blog">Blog</Nav.Link>
               <Nav.Link className="ml-2 mr-2 text-nowrap" href="/destinations">Destinations</Nav.Link>
               <Nav.Link className="ml-2 mr-2 text-nowrap" href="/travel-resources">Travel Resources</Nav.Link>
               <Nav.Link className="ml-2 mr-2 text-nowrap" href="/recipes">Recipes</Nav.Link>
               <Nav.Link className="ml-2 mr-2 text-nowrap" href="/contact">Contact</Nav.Link>
               <Nav.Link className="ml-2 mr-2 text-nowrap" href="/photos">Photo Album </Nav.Link>
-              <Nav.Link className="ml-2 mr-2 text-nowrap" href="/recommendations">Recommendations</Nav.Link>
+              <Nav.Link className="ml-2 mr-2 text-nowrap" href="/recommendations">Recommendations</Nav.Link> */}
             </Nav>
-            <Form inline>
-              <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-              <Button variant="outline-success">Search</Button>
-            </Form>
           </Navbar.Collapse>
         </StyledNavBar>
 
         <Switch>
-          <Route path="/about">
-            <Home />
-          </Route>
           <Route path="/blog">
             <Home />
           </Route>

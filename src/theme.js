@@ -8,7 +8,8 @@ export default {
         secondary: "#FFA69E",
         tertiary: "#AED9E0",
         quartenary: "#5E6472",
-        accent: "#FAF3DD"
+        accent: "#FAF3DD",
+        whiteTransparency85: "rgba(255, 255, 255, 0.85)"
     },
     nav: {
         height: "3.5em"
